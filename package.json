@@ -1,7 +1,7 @@
 {
   "name": "haydenturek-constants",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "Shared constants for haydenturek projects",
   "homepage": "https://github.com/haydenturek/constants#readme",
   "bugs": {
     "url": "https://github.com/haydenturek/constants/issues"
@@ -13,8 +13,23 @@
   "license": "ISC",
   "author": "",
   "type": "module",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
   }
 }
