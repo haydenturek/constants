@@ -1,6 +1,6 @@
 {
   "name": "haydenturek-constants",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Shared constants for haydenturek projects",
   "homepage": "https://github.com/haydenturek/constants#readme",
   "bugs": {
@@ -12,16 +12,8 @@
   },
   "license": "ISC",
   "author": "",
-  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    }
-  },
   "files": [
     "dist"
   ],
